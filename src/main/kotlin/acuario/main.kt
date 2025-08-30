@@ -1,5 +1,24 @@
 package acuario
 
+
+fun main(){
+    crearPeces()
+}
+
+fun crearPeces(){
+    val tiburon : Tiburon = Tiburon()
+    val pezPayaso : PezPayaso = PezPayaso()
+    println("Tiburon con color: ${tiburon.color}, Pez payaso con color: ${pezPayaso.color}")
+    tiburon.comer()
+    pezPayaso.comer()
+}
+
+
+
+
+
+
+
 fun construirAcuario(){
 
 //    val acuario1 = Acuario()
@@ -26,6 +45,3 @@ fun construirAcuario(){
 
 }
 
-fun main(){
-    construirAcuario()
-}
